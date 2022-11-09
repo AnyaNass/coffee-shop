@@ -1,16 +1,17 @@
+import { sale } from "sale";
+import { Header } from "./Header/Header";
+import { Banner } from "./Banner/Banner";
+import { CatalogsSection } from "./CatalogsSection/CatalogsSection";
+import { SaleProducts } from "./SaleProducts/SaleProducts"
+
 export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
+	return (
+		<>
+			<Header />
+			<Banner />
+			<CatalogsSection />
+			<SaleProducts products={sale} />
+		</>
+	);
 };
+
